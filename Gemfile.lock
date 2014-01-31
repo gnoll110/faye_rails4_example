@@ -1,3 +1,10 @@
+GIT
+  remote: git://github.com/ryanb/private_pub.git
+  revision: 7ad77617b1f48980d6f114bc96018f2964a07bdc
+  specs:
+    private_pub (1.0.3)
+      faye
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -25,6 +32,7 @@ GEM
       multi_json (~> 1.3)
       thread_safe (~> 0.1)
       tzinfo (~> 0.3.37)
+    addressable (2.3.5)
     arel (4.0.1)
     atomic (1.1.14)
     builder (3.1.4)
@@ -35,9 +43,31 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.7.0)
+    cookiejar (0.3.0)
+    em-http-request (1.1.2)
+      addressable (>= 2.3.4)
+      cookiejar
+      em-socksify (>= 0.3)
+      eventmachine (>= 1.0.3)
+      http_parser.rb (>= 0.6.0)
+    em-socksify (0.3.0)
+      eventmachine (>= 1.0.0.beta.4)
     erubis (2.7.0)
+    eventmachine (1.0.3)
     execjs (2.0.2)
+    faye (1.0.1)
+      cookiejar (>= 0.3.0)
+      em-http-request (>= 0.3.0)
+      eventmachine (>= 0.12.0)
+      faye-websocket (>= 0.7.0)
+      multi_json (>= 1.0.0)
+      rack (>= 1.0.0)
+      websocket-driver (>= 0.3.0)
+    faye-websocket (0.7.2)
+      eventmachine (>= 0.12.0)
+      websocket-driver (>= 0.3.1)
     hike (1.2.3)
+    http_parser.rb (0.6.0)
     i18n (0.6.9)
     jbuilder (1.5.3)
       activesupport (>= 3.0.0)
@@ -103,14 +133,17 @@ GEM
     uglifier (2.4.0)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
+    websocket-driver (0.3.2)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   coffee-rails (~> 4.0.0)
+  faye
   jbuilder (~> 1.2)
   jquery-rails
+  private_pub!
   rails (= 4.0.2)
   sass-rails (~> 4.0.0)
   sdoc

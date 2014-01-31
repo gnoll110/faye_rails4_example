@@ -45,3 +45,4 @@ end
 # gem 'debugger', group: [:development, :test]
 
 gem 'faye'
+gem 'private_pub', :git => 'git://github.com/ryanb/private_pub.git'
