@@ -31,3 +31,7 @@ test/version_tmp
 .yardoc
 _yardoc
 doc/
+
+# rails
+config/database.yml
+config/private_pub.yml
