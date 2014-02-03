@@ -19,6 +19,10 @@ Add the following gems to `Gemfile`:
     gem 'thin'
     gem 'private_pub', :git => 'git://github.com/ryanb/private_pub.git'
 
+Install the new gems.
+
+    bundle install
+
 Then install private_pub
 
     rails g private_pub:install
@@ -31,6 +35,15 @@ Run the faye server using Rackup.
 
 Step 2 - Some Basic Authentication
 ----------------------------------
+
+Create the sessions `controller`
+
+    rails g controller sessions new create
+
+Add these routes to your `config/routes.rb` file:
+
+    get  '/login' => 'sessions#new', :as => :login
+    post '/login' => 'sessions#create', :as => :login
 
 Step 3 - The Chat Room
 ----------------------
