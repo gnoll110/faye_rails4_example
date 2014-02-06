@@ -1,4 +1,5 @@
 FayeRails4Example::Application.routes.draw do
+  get "chats/room"
   #get "sessions/new"
   #get "sessions/create"
 

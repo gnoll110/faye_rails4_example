@@ -36,7 +36,7 @@ Run the faye server using Rackup.
 Step 2 - Some Basic Authentication
 ----------------------------------
 
-Create the sessions `controller`
+Create the sessions `controller`:
 
     rails g controller sessions new create
 
@@ -66,3 +66,7 @@ Modify the application layout. (stub)
 
 Step 3 - The Chat Room
 ----------------------
+
+Create a chat `controller`:
+
+    rails generate controller chats room
