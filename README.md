@@ -74,3 +74,9 @@ Create a chat `controller`:
 Add chat route to `config/routes.rb`
 
     get  '/chatroom' => 'chats#room', :as => :chat
+
+Add code to room method of chat controller.
+
+    def room
+      redirect_to login_path unless session[:username]
+    end
