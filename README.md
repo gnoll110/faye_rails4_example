@@ -70,3 +70,7 @@ Step 3 - The Chat Room
 Create a chat `controller`:
 
     rails generate controller chats room
+
+Add chat route to `config/routes.rb`
+
+    get  '/chatroom' => 'chats#room', :as => :chat
