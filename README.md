@@ -69,11 +69,12 @@ Step 3 - The Chat Room
 
 Create a chat `controller`:
 
-    rails generate controller chats room
+    rails generate controller chats room new_massage
 
 Add chat route to `config/routes.rb`
 
     get  '/chatroom' => 'chats#room', :as => :chat
+    post '/new_message' => 'chats#new_message', :as => :new_message
 
 Add code to room method of chat controller.
 
