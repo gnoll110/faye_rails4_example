@@ -132,3 +132,12 @@ Add code to new_message method of chat controller.
         f.js
       end
     end
+
+Rename chats view template from `new_message.html.erb` to `new_message.html.erb`. Then modify new_message view
+
+    // Clear message input
+    $('#message').val('');
+    
+    // Send the message
+    <% publish_to @channel, @message %>
+    
