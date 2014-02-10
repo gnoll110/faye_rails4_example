@@ -31,7 +31,7 @@ Private_pub install now generates `faye.ru`, remaned as `private_pub.ru`.
 
 Run the faye server using Rackup.
 
-    rackup privte_pub.ru -E production -s thin
+    rackup private_pub.ru -E production -s thin
 
 Step 2 - Some Basic Authentication
 ----------------------------------
@@ -140,4 +140,3 @@ Rename chats view template from `new_message.html.erb` to `new_message.html.erb`
     
     // Send the message
     <% publish_to @channel, @message %>
-    
